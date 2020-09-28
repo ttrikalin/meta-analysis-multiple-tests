@@ -14,6 +14,7 @@ gimme.eta.xi.G1.inits <- function(p.down.cells.G1, p.nodown.cells.G1) {
 
 logit <- function(x)
 {
+    stopifnot(x>0, x<1)
     return(log(x/(1.0-x)))
 }
 

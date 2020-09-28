@@ -7,9 +7,9 @@ library(rjags)
 
 
 # paths 
-path.stata <- paste('../', 'database_counts_all.dta', sep='')
-path.model.separate <- paste('./', 'model_separate.r', sep='')
-res.path <- paste('./', 'bayes_results', sep='')
+path.stata <- file.path('data', 'database_counts_all.dta', sep='')
+path.model.separate <- file.path('model_separate.r', sep='')
+res.path <- file.path('bayes_results', sep='')
 stem <- 'separate'
 
 # jags fitting 

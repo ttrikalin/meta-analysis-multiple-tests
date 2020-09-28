@@ -9,9 +9,9 @@ load.module('dic')
 
 
 # paths 
-path.stata <- paste('../', 'database_counts_all.dta', sep='')
-path.model.joint <- paste('./', 'model_joint_nocorrelations_all.r', sep='')
-res.path <- paste('./', 'bayes_results', sep='')
+path.stata <- file.path('data', 'database_counts_all.dta', sep='')
+path.model.joint <- file.path('model_joint_nocorrelations_all.r', sep='')
+res.path <- file.path('bayes_results', sep='')
 stem <- 'joint_nocorrelations'
 
 # jags fitting 
